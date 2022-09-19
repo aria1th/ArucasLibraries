@@ -1,3 +1,4 @@
+import * from Minecraft;
 import * from minecraft.MinecraftUtils;
 import * from util.Collections;
 class InventoryUtil {

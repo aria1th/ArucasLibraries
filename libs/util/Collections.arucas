@@ -59,7 +59,7 @@ class LinkedStack : Stack {
     /**
      * Constructs a new LinkedStack
      */
-    LinkedStack() {
+    LinkedStack() : super(){
         this.current = null;
     }
 
@@ -145,7 +145,7 @@ class LinkedStack : Stack {
  * Queue data strucutre using linked nodes
  * FILO with basic methods
  */
-class LinkedQueue : Queue{
+class LinkedQueue : Queue {
     /**
      * The node that is at the
      * front of the queue
@@ -160,7 +160,7 @@ class LinkedQueue : Queue{
     /**
      * Constructs a new LinkedQueue
      */
-    LinkedQueue() {
+    LinkedQueue() : super() {
         this.head = this.tail = null;
     }
 
@@ -258,6 +258,8 @@ class LinkedQueue : Queue{
 }
 
 class ImmutableList: List {
+    ImmutableList() : super(){}
+
     fun set(object: Object, index: Number) unsupported("Cannot set in an immutable list");
 
     fun remove(index: Number) unsupported("Cannot remove from an immutable list");
