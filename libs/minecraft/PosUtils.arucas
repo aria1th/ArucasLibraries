@@ -16,7 +16,7 @@ enum Direction {
 
     var vector;
     var axis;
-    Direction(x, y, z, axis) {
+    Direction(x, y, z, axis){
         this.vector = new Pos(x, y, z);
         this.axis = axis;
     }
@@ -205,7 +205,7 @@ class PosWithFun : Pos{
         }
         return new Pos(value.getX(),value.getY(),value.getZ());
     }
-    fun add(other : Pos){
+    fun add(other){
         return new PosWithFun(this.x + other.getX(), this.y + other.getY(), this.z + other.getZ());
     }
     fun add(x : Number, y : Number, z : Number){
