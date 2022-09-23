@@ -254,7 +254,7 @@ class PosWithFun : Pos{
         return this.add(direction.asVector());
     }
     fun offset(direction: Direction, amount : Number){
-        return this.internalAdd(direction, amount);
+        return this.internalAdd(direction.asVector(), amount);
     }
     fun multiply(amount : Number){
         //compat
