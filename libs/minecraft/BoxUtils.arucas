@@ -55,6 +55,12 @@ class Box {
         this.center = getCenterPos(minPos, maxPos);
     }
 
+    fun getPositionsFromWorld(world) {
+        return world.getPositions(this.pos1, this.pos2);
+    }
+    fun getBlocksFromWorld(world) {
+        return world.getBlocks(this.pos1, this.pos2);
+    }
     fun getComparator(){
         return fun(a, b) {
             return a.center.distanceTo(this.center) - b.center.distanceTo(this.center);};
